@@ -1,0 +1,121 @@
+body{
+	margin:auto 0;
+	font-family: Arial;
+}
+
+/*import font*/
+@font-face {
+  font-family: 'Blanka-Regular';
+  src: url('./fonts/Blanka-Regular.woff') format("woff"),
+       url('./fonts/HBlanka-Regular.ttf') format("truetype")
+}
+
+.container{
+	display:flex;
+	background-color: /*#313131*/#F6F6F6;
+	align-items: center;
+}
+
+/*NAV*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.main-nav{
+	display:flex;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    font-size:1.3em;
+    font-family: 'Merienda One', cursive;
+}
+
+/*screen size contro;*/
+@media only screen and (max-width:700px){
+    .main-nav{
+        font-size:1em;
+        padding:0;
+    }
+}
+
+li{
+	padding:20px;
+}
+
+li > a{
+	text-decoration: none;
+	color:/*#F3F1F4*/#242424;
+}
+
+.push{
+	margin-left:auto;
+	text-align: center;
+}
+
+/*logo*/
+img{
+	width:20vh;
+}
+
+/*cover*/
+
+.coverbox{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 70px 5fr 1fr;
+    height:70vh;
+    background-color: #212121;
+}
+.cover{
+	grid-area: 2 / 2 / 4/ 3;
+	height: 100%;
+	width: auto;
+	justify-self:center;
+
+/*margin-right:70px;*/
+}
+
+/*text*/
+h1{
+	color:white;
+	font-size: 2.5em;
+	font-family: 'Merienda One', cursive;
+	grid-area: 2/1/3/2;
+	justify-self:center;
+	align-self: end;
+}
+
+@media only screen and (max-width:700px){
+    h1{
+        font-size:1em;
+        padding:0;
+        align-self: center;
+    }
+}
+
+.grid-wrapper{
+	grid-area: 3/1/4/2;
+	justify-self:end;
+	align-self: end;
+}
+
+.row{
+	display: flex;
+}
+
+.white{
+
+	list-style: none;
+	border-radius: 30%;
+	background: white;
+	margin:5px;
+	padding:10px;
+	align-items: center;
+}
+
+a.fa{
+	font-size: 1.5em;
+}
