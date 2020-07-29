@@ -92,8 +92,14 @@ hr{
 		height: 5px;
 		background-color: black;
 		margin: 6px 8px;
-		
+
     }
+    .bars{
+    	pointer-events: none;
+    }
+	.dropbtn>h4{
+		pointer-events: none;
+	}
 
 
 	.dropbtn {
@@ -106,6 +112,7 @@ hr{
 		font-size: 1em;
 		border: none;
 		cursor: pointer;
+		
 	}
 
 	.dropbtn:hover, .dropbtn:focus {
