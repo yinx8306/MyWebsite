@@ -31,6 +31,23 @@
 			<a href="index.html"><img class="logo" src="./logo/YCH/linkedin_banner_image_1.png"></a>
 			<div class="push">
 				<ul class="main-nav">
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+							<div class="bars">
+		  						<div></div>
+		  						<div></div>
+		 						<div></div>
+							</div>
+							<h4>MENU</h4>
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="#about-section">ABOUT</a>
+							<a href="#portfolio-section">PORTFOLIO</a>
+							<a href="#contact-section">CONTACT</a>
+						</div>
+						
+					</div>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="#about-section">ABOUT</a></li>
 					<li><a href="#portfolio-section">PORTFOLIO</a></li>
@@ -42,47 +59,51 @@
 			<h1 class="shrink animate__animated animate__backInLeft">I AM <br>Jessie Huang<br>
 			“Front-end Developer”</h1> 
 			<div class="grid-wrapper">
-				<ul class="row animate__animated animate__backInUp">
-					<li class="white"><a href="https://www.linkedin.com/in/ying-chen-huang-92a291152/" target="_blank" class="fa fa-linkedin"></a></li>
-					<li class="white"><a href="https://github.com/yinx8306" target="_blank" class="fa fa-github"></a></li>
+				<ul class="iconrow animate__animated animate__backInUp">
+					<li class="iconwhite"><a href="https://www.linkedin.com/in/ying-chen-huang-92a291152/" target="_blank" class="fa fa-linkedin"></a></li>
+					<li class="iconwhite"><a href="https://github.com/yinx8306" target="_blank" class="fa fa-github"></a></li>
 				</ul>
 			</div>
-			<img class="cover" src="./Image/yinx-rmbg.png">
+			<img class="coverimg" src="./Image/yinx-rmbg.png">
 		</div>
-	<section id="about-section"> 
-		<div class="Aboutgrid">
-			<div class="center100width">
-				<div class="space"></div>
-				<h1>About Me</h1>
-				<p>Never underestimate yourself.</p>
-			</div>
-			<div class="flexstart">
-				<ul class="leftgrid">
-					<li>
-						<span>Name:</span>
-						<span>Ying Chen Huang</span>
-					</li>
-					<li>
-						<span>Nationality:</span>
-						<span>Taiwan</span>
-					</li>
-					<li>
-						<span>Date of birth:</span>
-						<span>June 9th</span>
-					</li>
-					<li>
-						<span>Email:</span>
-						<span>yinx8306@gmail.com</span>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="flexcenter">	
-				<a href=""><button class="btn">DOWNLOAD CV</button></a>
-				<img src="./Image/Cover-removebg-preview.png">
+
+		<div id="about-section"> 
+			<div class="Aboutgrid">
+				<div class="center100width">
+					<div class="space"></div>
+					<h1>About Me</h1>
+					<p>Never underestimate yourself.</p>
+				</div>
+				<div class="flexstart">
+					<ul class="leftgrid">
+						<li>
+							<span>Name:</span>
+							<span>Ying Chen Huang</span>
+						</li>
+						<li>
+							<span>Nationality:</span>
+							<span>Taiwan</span>
+						</li>
+						<li>
+							<span>Date of birth:</span>
+							<span>June 9th</span>
+						</li>
+						<li>
+							<span>Email:</span>
+							<span>yinx8306@gmail.com</span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="flexcenter">	
+					<a href=""><button class="btn">DOWNLOAD CV</button></a>
+					<img src="./Image/Cover-removebg-preview.png">
+				</div>
 			</div>
 		</div>
+
 		<hr>
+
 		<div class="resume">
 			<div class="dashedgrid">
 				<ul class="dashed">
@@ -131,7 +152,6 @@
 
 					<!-- <div class="colorband"></div> -->
 					<!-- <div class="space"></div> -->
-
 					<div id="education-section">
 						<div class="space"></div>
 						<h2 class="header">Education</h2>
@@ -177,10 +197,7 @@
 								</ul>
 							</div>
 						</div>
-					</div>	
-
-					<!-- <div class="colorband"></div> -->
-					<!-- <div class="space"></div> -->
+					</div>
 
 					<div id="awards-section">
 						<div class="space"></div>
@@ -223,7 +240,7 @@
 					</div>
 
 					<!-- <div class="colorband"></div> -->
-					<!-- <div class="space"></div> -->
+					<!-- <div class="space"></div> -->	
 
 					<div id="publication-section">
 						<div class="space"></div>
@@ -271,8 +288,6 @@
 							</div>	
 						</div>
 					</div>
-					
-					<!-- <div class="space"></div> -->
 
 					<div id="skills-section">
 						<div class="space"></div>
@@ -334,9 +349,7 @@
 					</div>
 				</div>
 		</div>
-	</section>
-
-	<section id="portfolio-section">
+		<div id="portfolio-section">
 		<div class="space"></div>
 		<div class=portfoliogrid>	
 			<h1>Portfolio</h1>
@@ -377,9 +390,8 @@
 			
 			</a>
 		</div>
-	</section>
-
-	<section id="contact-section">
+	</div>
+	<div id="contact-section">
 		<div class="space"></div>
 		<div class="contactgrid">
 			<div class="center100width">
@@ -396,34 +408,30 @@
 				<h3>Email Adress</h3>
 				<p><a href="mailto:yinx8306@gmail.com">yinx8306@gmail.com</a></p>
 			</div>
-			<form action="#" class="contact-form">
+			<form method="GET" action="#" class="contact-form">
 				<div class="text-form">
 					<div class="form-group">
-						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your name" name="name">
 					</div>
 					<div class="form-group">
-						<input type="text" placeholder="Your email">
+						<input type="email" placeholder="Your email" name="Email">
 					</div>
 					<div class="form-group">
-						<input type="text" placeholder="Subject">
+						<input type="text" placeholder="Subject" name="Subject">
 					</div>
 					<div class="form-group">
-						<input type="text" placeholder="Message">
+						<input type="text" placeholder="Message" name="Message">
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Send Message">
+						
 					</div>
 				</div>
+			</form>
 		</div>
 
-		
 
-
-
-
-
-
-	</section>
+	</div>
 
 	
 
@@ -432,6 +440,27 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script>
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
 
 </body>
 </html>
