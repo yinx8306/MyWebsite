@@ -678,7 +678,7 @@ span:last-child{
 
 @media screen and (max-width: 798px){
 	.skill-list li{
-		width:100px;
+		width:200px;
 		font-size: 12px;
 	}
 	.skill-list{
