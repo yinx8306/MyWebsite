@@ -65,7 +65,12 @@ hr{
 .main-nav li > a{
 	text-decoration: none;
 	color:#242424;
+	border-bottom: 3px solid transparent;
 
+}
+
+.main-nav li > a:hover{
+	border-bottom: 3px solid #ddd;
 }
 
 .push{
@@ -448,7 +453,9 @@ span:last-child{
 	text-decoration: none;
 	color:black;
 	font-weight:1000;
+	border-bottom: 3px solid transparent;
 }
+
 
 .flexbox{
 	display: flex;
