@@ -470,10 +470,19 @@ span:last-child{
 		grid-area:;
 	}*/
 
-.icon{
-	width:40px;
+.iconTSMC{
+	width:55px;
 	grid-area:1/1/2/2;
-	margin-top: 25px;
+	margin: 20px 0px 0px 0px;
+	
+
+}
+
+
+.icon{
+	width:45px;
+	grid-area:1/1/2/2;
+	margin: 20px 3px 0px 3px;
 	
 }
 
@@ -483,7 +492,7 @@ span:last-child{
 
 .detailtext{
 	display: grid;
-	grid-template-columns: 50px 1fr;
+	grid-template-columns: 60px 1fr;
 	grid-template-rows: 1fr;
 	/*margin-top: 20px;
 	margin-left: 10px;*/
