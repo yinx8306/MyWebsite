@@ -1,0 +1,27 @@
+body{
+	text-align: center;
+	font-family: "Poppins", Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+
+video{
+	max-width:80%;
+	text-align: center;
+}
+
+h3{
+	text-align: left;
+	margin-left: 50px;
+}
+
+.manual ol{
+	text-align: left;
+	margin-left: 50px;
+}
+
+.manual img{
+	max-width:50%;
+}
