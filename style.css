@@ -755,17 +755,12 @@ span:last-child{
 
 
 .portfoliobox>p {
-	text-align:center;
+	text-align: center;
 	color:rgba(0, 0, 0, 0.7);
 	margin-left: 40px;
 	margin-right: 40px;
 }
 
-
-video{
-	width:90%;
-
-}
 
 @media screen and (max-width:550px){
 	.portfoliogrid{
@@ -894,6 +889,16 @@ input[type=text]{
 }
 
 input[type=email]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea{
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0px;
