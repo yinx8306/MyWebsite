@@ -728,6 +728,7 @@ span:last-child{
 
 .portfoliorow:hover{
 	background-color: #5490ff ;/*3e64ff;*/
+	color:white;
 }
 
 .porfoliobox{
@@ -760,6 +761,11 @@ span:last-child{
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
+.portfoliobox>p:hover {
+	color:white;
+}
+
 
 
 @media screen and (max-width:550px){
